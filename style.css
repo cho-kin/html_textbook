@@ -6,6 +6,8 @@
   --accent-color: #BF6A7A;
   --dark-color: #2B5566;
   --text-bright-color: #fff;
+  --icon-color: #fff;
+  --icon-bk-color: #ddd;
 }
 
 /* 基本設定： ページ全体　*/
@@ -24,7 +26,7 @@ body {
   background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url(img/header.jpg);
   background-position: center;
   background-size: cover;
-  color: #fff;
+  color: #fff;""
   color: var(--text-bright-color);
   text-align: center;
 }
@@ -73,5 +75,67 @@ body {
 
   .conA p {
     font-size: 24px;
+  }
+}
+
+/* コンテンツB: 概要（アイコン＋テキスト） */
+.conB .container {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.conB .text {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.conB h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.conB p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
+.conB a {
+  color: #5D9AB2;
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.conB a:hover {
+  text-decoration: underline;
+}
+
+
+.conB .icon {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 40px;
+  width: 2em;
+  line-height: 2em;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #ddd;
+  background-color: var(--icon-bk-color);
+  color: #fff;
+  color: var(--icon-color);
+}
+
+@media (min-width: 768px){
+  .conB .container {
+    display: flex;
+  }
+
+  .conB .text {
+    flex: 1;
   }
 }
